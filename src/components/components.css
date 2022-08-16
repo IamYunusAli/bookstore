@@ -1,0 +1,170 @@
+.header {
+  padding: 24px 4%;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 40px;
+  gap: 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navlink {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
+.icon {
+  cursor: pointer;
+  width: 2.813rem;
+  height: 2.813rem;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.detail-divider {
+  width: 0.125rem;
+  height: 1.5rem;
+  background-color: #e8e8e8;
+  margin: 0 1rem;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #0290ff;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 0.938rem;
+  gap: 0.938rem;
+  width: 80%;
+}
+
+.progress-divider {
+  width: 0.125rem;
+  height: 4.375rem;
+  background-color: #e8e8e8;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  padding: 2rem;
+}
+
+.book-title {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+.list-unstyled {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.progress-icon {
+  font-size: 3.9rem;
+}
+
+.progress-container {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.chapter-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress-value {
+  font-size: 1.4rem;
+}
+
+.progress-completed {
+  font-size: 0.8rem;
+}
+
+.form {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 5%;
+}
+
+.form-divider {
+  height: 0.125rem;
+  background-color: #e8e8e8;
+  width: 100%;
+  margin: 2.5rem 0 1.813rem;
+}
+
+.inputform {
+  width: 80%;
+}
+
+.input {
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
+  color: #121212;
+}
+
+.titleinput {
+  width: 50%;
+}
+
+.selectinput {
+  width: 30%;
+}
+
+.buttons {
+  background-color: #0290ff;
+  padding: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.addbook {
+  width: 20%;
+}
