@@ -128,13 +128,13 @@ h1 {
 }
 
 ul button {
- background: none;
- border: none
+  background: none;
+  border: none;
 }
 
 ul button:hover {
   cursor: pointer;
-  color:#0290ff;
+  color: #0290ff;
 }
 
 .form-divider {
