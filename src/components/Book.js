@@ -1,11 +1,17 @@
 import { AiOutlineLoading3Quarters } from 'react-icons/ai';
-import './components.css';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import { REMOVEBOOKS } from '../redux/books/book';
+import './components.css';
 
 const Books = (props) => {
+  const dispatch = useDispatch();
   const {
-    title, author, percent, chapter, genere,
+    id, title, author, percent, chapter, genere,
   } = props;
+  const removebook = () => {
+    dispatch(REMOVEBOOKS(id));
+  };
   return (
     <>
       <div className="container">
@@ -19,11 +25,11 @@ const Books = (props) => {
 
             <div className="desc-option">
               <ul className="list-unstyled">
-                <li>Comments</li>
+                <button type="button"><li>Comments</li></button>
                 <div className="detail-divider" />
-                <li>Remove</li>
+                <button type="button" onClick={removebook}><li>Remove</li></button>
                 <div className="detail-divider" />
-                <li>Edit</li>
+                <button type="button"><li>Edit</li></button>
               </ul>
             </div>
           </div>
@@ -57,6 +63,7 @@ const Books = (props) => {
 };
 
 Books.propTypes = {
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   percent: PropTypes.number.isRequired,

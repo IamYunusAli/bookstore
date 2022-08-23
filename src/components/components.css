@@ -127,6 +127,16 @@ h1 {
   margin-bottom: 5%;
 }
 
+ul button {
+  background: none;
+  border: none;
+}
+
+ul button:hover {
+  cursor: pointer;
+  color: #0290ff;
+}
+
 .form-divider {
   height: 0.125rem;
   background-color: #e8e8e8;
