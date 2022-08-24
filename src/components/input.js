@@ -12,12 +12,10 @@ const Input = () => {
   const Addboooks = (element) => {
     element.preventDefault();
     const book = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title,
       author,
-      percent: 12,
-      chapter: 1,
-      genere: 'Science Fiction',
+      category: 'Action',
     };
     if (title.length !== 0 && author.length !== 0) {
       dispatch(ADDBOOKS(book));
