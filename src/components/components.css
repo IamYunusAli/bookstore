@@ -21,6 +21,11 @@
   gap: 0.5rem;
 }
 
+ul li {
+  padding: 10px;
+  padding-left: 0;
+}
+
 .icon {
   cursor: pointer;
   width: 2.813rem;
@@ -28,6 +33,12 @@
   border-radius: 50%;
   border: 1px solid #e8e8e8;
   background-color: #fff;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 a {
@@ -104,7 +115,9 @@ h1 {
 
 .progress-container {
   display: flex;
-  gap: 0.6rem;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .chapter-info {
@@ -130,6 +143,7 @@ h1 {
 ul button {
   background: none;
   border: none;
+  color: gray;
 }
 
 ul button:hover {
