@@ -7,7 +7,7 @@ import './components.css';
 const Books = (props) => {
   const dispatch = useDispatch();
   const {
-    id, title, author, percent, chapter, genere,
+    id, title, author, category,
   } = props;
   const removebook = () => {
     dispatch(REMOVEBOOKS(id));
@@ -18,7 +18,7 @@ const Books = (props) => {
         <div className="card">
           <div className="desc-box">
             <div className="desc">
-              <p>{genere}</p>
+              <p>{category}</p>
               <p className="book-title">{title}</p>
               <p className="book-author">{author}</p>
             </div>
@@ -39,7 +39,7 @@ const Books = (props) => {
             </div>
             <div className="percent-info">
               <p className="progress-value">
-                {percent}
+                18
                 %
               </p>
               <p className="progress-completed">Completed</p>
@@ -51,7 +51,7 @@ const Books = (props) => {
               <p>CURRENT CHAPTER</p>
               <p>
                 Chapter
-                {chapter}
+                12
               </p>
             </div>
             <button className="buttons" type="button">UPDATE PROGRESS</button>
@@ -66,9 +66,7 @@ Books.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  percent: PropTypes.number.isRequired,
-  chapter: PropTypes.number.isRequired,
-  genere: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
 };
 
 export default Books;
