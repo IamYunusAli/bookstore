@@ -35,7 +35,7 @@ const Books = (props) => {
           </div>
           <div className="progress-container">
             <div className="progress-icon">
-              <AiOutlineLoading3Quarters />
+              <AiOutlineLoading3Quarters color="#0290ff" />
             </div>
             <div className="percent-info">
               <p className="progress-value">
