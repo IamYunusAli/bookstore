@@ -9,9 +9,9 @@
 - Javascript
 - React
 
-## Live Demo (if available)
+## Live Demo 
 
-[not available]()
+[View live here](https://bookstoreyun.netlify.app)
 
 ## Getting Started
 
